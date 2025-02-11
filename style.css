@@ -1,0 +1,107 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.hero {
+    background-image: url("./assets/boots-band.jpg");
+    background-size: cover;
+    
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    filter: invert(1);
+}
+
+i.truck {
+    background-image: url("./assets/truck.svg");
+}
+
+i.eq {
+    background-image: url("./assets/eq.svg");
+}
+
+i.package {
+    background-image: url("./assets/package.svg");
+}
+
+.value-proposition .header h3 {
+    padding-left: 1rem;
+}
+
+.value-proposition .header {
+    display: flex;
+    align-items: center;
+}
