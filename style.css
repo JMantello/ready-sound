@@ -42,8 +42,8 @@ nav .logo {
     background-repeat: no-repeat;
     background-position: center;
     filter: invert(1);
-    width: 120px;
-    height: 60px;
+    width: 140px;
+    height: 80px;
 }
 
 nav {
@@ -52,7 +52,7 @@ nav {
     align-items: center;
     padding: 1rem 2rem;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -64,11 +64,11 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 .nav-links a {
-    padding: 1rem
+    padding: 1rem;
 }
 
 .hero-image {
@@ -93,22 +93,22 @@ nav {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    color: #fff;
+    color: white;
     text-align: right;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .hero-content h1 {
-    font-size: 3.6rem;
+    font-size: 4.4rem;
     font-weight: 600;
-    margin-bottom: 2rem;
-    line-height: 1.0;
-    letter-spacing: -1px;
+    margin-bottom: 1.4rem;
+    line-height: 0.9;
+    letter-spacing: -2px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 1.0rem;
+    line-height: 1.2;
     margin-bottom: 2rem;
     font-weight: 300;
 }
@@ -127,12 +127,12 @@ nav {
     /* backdrop-filter: blur(10px); */
     background: rgba(0, 0, 0, 0.1);
     padding: 0.7rem 1.5rem;
-    border: 1.5px solid #fff;
+    border: 1.5px solid white;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .hero-container .cta-container:hover {
@@ -163,13 +163,4 @@ i.eq {
 
 i.package {
     background-image: url("./assets/package.svg");
-}
-
-.value-proposition .header h3 {
-    padding-left: 1rem;
-}
-
-.value-proposition .header {
-    display: flex;
-    align-items: center;
 }
