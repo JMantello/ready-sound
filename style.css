@@ -1,7 +1,7 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* CSS Reset */
+/* CSS Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +36,8 @@ ul, ol {
     list-style: none;
 }
 
+
+/* Nav */
 nav .logo {
     background-image: url("./assets/ready-sound-black.svg");
     background-size: contain;
@@ -142,8 +144,8 @@ nav {
 
 i {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     background-size: cover;
 }
 
@@ -151,6 +153,13 @@ i.keyboard-down {
     background-image: url("./assets/keyboard-down.svg");
     width: 40px;
     height: 40px;
+}
+
+i.truck,
+i.eq,
+i.package {
+    filter: invert(1);
+    display: none;
 }
 
 i.truck {
@@ -163,4 +172,41 @@ i.eq {
 
 i.package {
     background-image: url("./assets/package.svg");
+}
+
+section.value-propositions {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.value-propositions h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 3.4rem;
+    font-weight: 500;
+    padding-bottom: 1.6rem;
+}
+
+.value-propositions h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.value-propositions p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+}
+
+.value-proposition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 0;
+}
+
+.value-proposition .content {
+    max-width: 600px;
+    padding-left: 6px;
 }
