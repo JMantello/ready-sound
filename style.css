@@ -1,3 +1,6 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -7,7 +10,8 @@
 
 html, body {
     height: 100%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
 }
 
 img, picture, video, canvas, svg {
@@ -24,28 +28,33 @@ a {
     color: inherit;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 ul, ol {
     list-style: none;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #f0f0f0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-nav ul {
-    list-style: none;
+nav .logo {
+    background-image: url("./assets/ready-sound-black.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1);
+    width: 120px;
+    height: 60px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -55,26 +64,80 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
-.hero {
+.nav-links a {
+    padding: 1rem
+}
+
+.hero-image {
     background-image: url("./assets/boots-band.jpg");
     background-size: cover;
-    
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
 }
 
-.hero .overlay {
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
+.hero-container {
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
-    padding: 150px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+
+.hero-content {
+    padding: 10%;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: right;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.hero-content h1 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 1.0;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.hero-container .cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    transition: transform .2s;
+}
+
+.hero-container .cta {
+    /* backdrop-filter: blur(10px); */
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.7rem 1.5rem;
+    border: 1.5px solid #fff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+.hero-container .cta-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 i {
@@ -82,7 +145,12 @@ i {
     width: 50px;
     height: 50px;
     background-size: cover;
-    filter: invert(1);
+}
+
+i.keyboard-down {
+    background-image: url("./assets/keyboard-down.svg");
+    width: 40px;
+    height: 40px;
 }
 
 i.truck {
