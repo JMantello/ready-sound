@@ -12,6 +12,7 @@ html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 
 img, picture, video, canvas, svg {
@@ -97,7 +98,7 @@ nav {
     justify-content: center;
     color: white;
     text-align: right;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    /* text-shadow: 2px 2px 5px rgb(0, 0, 0); */
 }
 
 .hero-content h1 {
@@ -134,18 +135,18 @@ nav {
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 2px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 3rem;
+    transition: 0.2s;
 }
 
-.hero-container .cta-container:hover {
+.hero-container .cta:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
 
+
 i {
     display: inline-block;
-    width: 90px;
-    height: 90px;
     background-size: cover;
 }
 
@@ -153,13 +154,35 @@ i.keyboard-down {
     background-image: url("./assets/keyboard-down.svg");
     width: 40px;
     height: 40px;
+    animation: MoveUpDown 2s linear infinite;
+    position: absolute;
+    bottom: 0;
 }
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 25px;
+    }
+    15% {
+      bottom: 20px;
+    }
+
+    20% {
+        bottom: 23px;
+    }
+
+    40% {
+        bottom: 25px;
+    }
+  }
 
 i.truck,
 i.eq,
 i.package {
     filter: invert(1);
-    display: none;
+    min-width: 80px;
+    min-height: 80px;
+    margin-right: 2rem;
 }
 
 i.truck {
@@ -178,35 +201,44 @@ section.value-propositions {
     padding: 6rem 0;
     display: flex;
     flex-direction: column;
+    /* background-color: black; */
+    /* color: #f4f4f4; */
+}
+
+.value-proposition {
+    padding: 2rem 2rem;
+    margin: 1rem auto;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    /* border-radius: 100px; */
 }
 
 .value-propositions h2 {
     max-width: 800px;
     margin: 0 auto;
+    padding-left: 10%;
     font-size: 3.4rem;
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: 1.6rem;
 }
 
 .value-propositions h3 {
+    font-weight: 500;
     font-size: 1.5rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
 }
 
 .value-propositions p {
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.3rem;
-}
-
-.value-proposition {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.4rem 0;
+    line-height: 1.4rem;
 }
 
 .value-proposition .content {
-    max-width: 600px;
+    max-width: 790px;
     padding-left: 6px;
 }
