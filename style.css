@@ -178,10 +178,10 @@ i.keyboard-down {
 
 i.truck,
 i.eq,
-i.package {
+i.package-icon {
     filter: invert(1);
-    min-width: 80px;
-    min-height: 80px;
+    min-width: 100px;
+    min-height: 100px;
     margin-right: 2rem;
 }
 
@@ -193,7 +193,7 @@ i.eq {
     background-image: url("./assets/eq.svg");
 }
 
-i.package {
+i.package-icon {
     background-image: url("./assets/package.svg");
 }
 
@@ -215,30 +215,117 @@ section.value-propositions {
     justify-content: center;
     /* background-color: white; */
     /* border-radius: 100px; */
+    max-width: 990px;
 }
 
-.value-propositions h2 {
-    max-width: 800px;
+h2 {
+    max-width: 990px;
     margin: 0 auto;
-    padding-left: 10%;
+    padding-left: 1rem;
+    /* text-align: center; */
     font-size: 3.4rem;
     font-weight: 700;
     padding-bottom: 1.6rem;
 }
 
-.value-propositions h3 {
+h3 {
     font-weight: 500;
     font-size: 1.5rem;
     margin-bottom: 0.4rem;
 }
 
-.value-propositions p {
+p {
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
 }
 
 .value-proposition .content {
-    max-width: 790px;
     padding-left: 6px;
+}
+
+.live-sound-packages h2 {
+    /* text-align: end; */
+}
+
+.package {
+    max-width: 990px;
+    margin: 4rem auto;
+    padding: 1rem;
+    text-align: start;
+}
+
+.package ul {
+    margin-top: 10px;
+    /* border-top: 2px solid black; */
+    padding-top: 1rem;
+    /* width: fit-content; */
+}
+
+.package .list-img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.package li {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    list-style-type: disc;
+    line-height: 30px;
+    border-top: 1px solid black;
+}
+
+.package li:last-child {
+    border-bottom: 1px solid black;
+}
+
+.package .list-price-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.package .price {
+    /* color: #042225; */
+    margin-top: 1.5rem;
+}
+
+.required-footnote {
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+.package .img {
+    border: 1px solid black;
+    /* flex: 1; */
+    width: 300px;
+    height: 300px;
+    margin: 0 2rem;
+    align-self: center;
+}
+
+.img.standard-package,
+.img.events-dj,
+.img.live-music {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+
+.img.standard-package {
+    background-image: url("./assets/mic-orange.jpg");
+}
+
+.img.events-dj {
+    /* background-image: url("./assets/hands-crowd.jpg"); */
+    background-image: url("./assets/party.jpg");
+}
+
+.img.live-music {
+    /* background-image: url("./assets/seattle-music-2.jpg"); */
+    background-image: url("./assets/hands-crowd.jpg");
+
 }
