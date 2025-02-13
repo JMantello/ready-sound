@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* CSS Reset and Global Styles */
+:root {
+    --section-margin: 8rem;
+    --section-max-width: 1200px;
+    --section-padding-width: 0rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +21,30 @@ html, body {
     scroll-behavior: smooth;
 }
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+section {
+    margin: 0 auto;
+    max-width: var(--section-max-width);
+    margin-bottom: var(--section-margin);
+    padding: 0 var(--section-padding-width);
 }
 
-input, button, textarea, select {
-    font: inherit;
+h2 {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 700;
+    padding-bottom: 1.6rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6rem;
 }
 
 a {
@@ -33,10 +56,19 @@ a:hover {
     cursor: pointer;
 }
 
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
 ul, ol {
     list-style: none;
 }
-
 
 /* Nav */
 nav .logo {
@@ -80,6 +112,7 @@ nav {
     background-position: center;
     height: 100vh;
     width: 100vw;
+    margin-bottom: var(--section-margin);
 }
 
 .hero-container {
@@ -197,14 +230,7 @@ i.package-icon {
     background-image: url("./assets/package.svg");
 }
 
-section.value-propositions {
-    padding: 6rem 0;
-    display: flex;
-    flex-direction: column;
-    /* background-color: black; */
-    /* color: #f4f4f4; */
-}
-
+/* Value Propositions */
 .value-proposition {
     padding: 2rem 2rem;
     margin: 1rem auto;
@@ -222,26 +248,11 @@ section.value-propositions {
     padding-left: 6px;
 }
 
-h2 {
-    max-width: 990px;
+/* Packages */
+.live-sound-packages {
     margin: 0 auto;
-    /* padding-left: 1rem; */
-    text-align: center;
-    font-size: 3.4rem;
-    font-weight: 700;
-    padding-bottom: 1.6rem;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-bottom: 0.4rem;
-}
-
-p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.6rem;
+    max-width: var(--section-max-width);
+    margin-bottom: var(--section-margin);
 }
 
 .package {
@@ -303,12 +314,15 @@ p {
     align-self: center;
 }
 
-.img.standard-package,
-.img.events-dj,
-.img.live-music {
+.img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.img.standard-package,
+.img.events-dj,
+.img.live-music {
     filter: grayscale(1);
 }
 
@@ -324,5 +338,85 @@ p {
 .img.live-music {
     /* background-image: url("./assets/seattle-music-2.jpg"); */
     background-image: url("./assets/hands-crowd.jpg");
+}
 
+.img.live-sound-engineering {
+    background-image: url("./assets/live-sound-view.jpg");
+    width: 400px;
+    height: 250px;
+    /* filter: grayscale(0.1); */
+    margin: 0 2rem;
+}
+
+/* Services */
+.services {
+    margin: 0 auto;
+    max-width: var(--section-max-width);
+    margin-bottom: var(--section-margin);
+}
+
+.services .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 990px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.services p {
+    max-width: 500px;
+    /* text-align: right; */
+}
+
+.get-in-touch {
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+.get-in-touch a {
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.906);
+    color: #f4f4f4;
+}
+
+footer .logo {
+    height: 100px;
+    width: 160px;
+    background-image: url("./assets/ready-sound-black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    margin-bottom: 1rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer .right {
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+footer .quick-links {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
