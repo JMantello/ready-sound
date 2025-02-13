@@ -4,8 +4,8 @@
 /* CSS Reset and Global Styles */
 :root {
     --section-margin: 8rem;
-    --section-max-width: 1200px;
-    --section-padding-width: 0rem;
+    --section-max-width: 1050px;
+    --section-padding-width: 2rem;
 }
 
 * {
@@ -29,10 +29,10 @@ section {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     font-size: 3.4rem;
     font-weight: 700;
-    padding-bottom: 1.6rem;
+    padding-bottom: 4rem;
 }
 
 h3 {
@@ -209,13 +209,14 @@ i.keyboard-down {
     }
   }
 
+/* Value Propositions */
 i.truck,
 i.eq,
 i.package-icon {
     filter: invert(1);
     min-width: 100px;
     min-height: 100px;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 i.truck {
@@ -230,36 +231,33 @@ i.package-icon {
     background-image: url("./assets/package.svg");
 }
 
-/* Value Propositions */
 .value-proposition {
-    padding: 2rem 2rem;
-    margin: 1rem auto;
-    /* text-align: center; */
+    max-width: 610px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     /* border-bottom: 2px solid black; */
     /* border-radius: 100px; */
-    max-width: 990px;
 }
 
 .value-proposition .content {
-    padding-left: 6px;
+    /* padding-left: 6px; */
 }
 
 /* Packages */
-.live-sound-packages {
-    margin: 0 auto;
-    max-width: var(--section-max-width);
-    margin-bottom: var(--section-margin);
+.package {
+    /* max-width: 990px; */
+    margin-bottom: 6rem;
+    /* padding: 1rem 0; */
+    text-align: start;
 }
 
-.package {
-    max-width: 990px;
-    margin: 4rem auto;
-    padding: 1rem;
-    text-align: start;
+.package:last-child {
+    margin-bottom: 0;
 }
 
 .package ul {
@@ -275,27 +273,28 @@ i.package-icon {
 }
 
 .package li {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.4rem;
-    list-style-type: disc;
     line-height: 30px;
-    border-top: 1px solid black;
+    /* list-style-type: disc; */
+    /* border-top: 1px solid black; */
 }
 
 .package li:last-child {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 
 .package .list-price-container {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
 }
 
 .package .price {
     /* color: #042225; */
     margin-top: 1.5rem;
+    /* margin-left: 1rem; */
     font-weight: 500;
 }
 
@@ -311,7 +310,7 @@ i.package-icon {
     width: 300px;
     height: 300px;
     margin: 0 2rem;
-    align-self: center;
+    align-self: start;
 }
 
 .img {
@@ -324,6 +323,7 @@ i.package-icon {
 .img.events-dj,
 .img.live-music {
     filter: grayscale(1);
+    background-position: ;
 }
 
 .img.standard-package {
@@ -342,8 +342,8 @@ i.package-icon {
 
 .img.live-sound-engineering {
     background-image: url("./assets/live-sound-view.jpg");
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     /* filter: grayscale(0.1); */
     margin: 0 2rem;
 }
@@ -359,8 +359,7 @@ i.package-icon {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    max-width: 990px;
-    padding: 0 2rem;
+    /* max-width: 990px; */
     margin: 0 auto;
     margin-top: 2rem;
 }
@@ -370,16 +369,22 @@ i.package-icon {
     /* text-align: right; */
 }
 
-.get-in-touch {
-    max-width: 500px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 8rem;
+/* Get in touch */
+.get-in-touch p {
+    
 }
 
 .get-in-touch a {
     display: inline-block;
-    margin: 1rem 0;
+    margin-top: 2rem;
+    padding: 0.7rem 1.5rem;
+    border: 1.5px solid black;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 2px;
+    margin-bottom: 3.5rem;
+    transition: 0.2s;
 }
 
 footer {
