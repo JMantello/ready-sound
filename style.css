@@ -135,7 +135,7 @@ nav {
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 2px;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     transition: 0.2s;
 }
 
@@ -213,16 +213,20 @@ section.value-propositions {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* background-color: white; */
+    /* border-bottom: 2px solid black; */
     /* border-radius: 100px; */
     max-width: 990px;
+}
+
+.value-proposition .content {
+    padding-left: 6px;
 }
 
 h2 {
     max-width: 990px;
     margin: 0 auto;
-    padding-left: 1rem;
-    /* text-align: center; */
+    /* padding-left: 1rem; */
+    text-align: center;
     font-size: 3.4rem;
     font-weight: 700;
     padding-bottom: 1.6rem;
@@ -238,14 +242,6 @@ p {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.6rem;
-}
-
-.value-proposition .content {
-    padding-left: 6px;
-}
-
-.live-sound-packages h2 {
-    /* text-align: end; */
 }
 
 .package {
@@ -289,6 +285,7 @@ p {
 .package .price {
     /* color: #042225; */
     margin-top: 1.5rem;
+    font-weight: 500;
 }
 
 .required-footnote {
