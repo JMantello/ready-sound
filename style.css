@@ -3,7 +3,7 @@
 
 /* CSS Reset and Global Styles */
 :root {
-    --section-margin: 8rem;
+    --section-margin: 6rem;
     --section-max-width: 1050px;
     --section-padding-width: 2rem;
 }
@@ -14,7 +14,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
@@ -32,7 +33,7 @@ h2 {
     text-align: left;
     font-size: 3.4rem;
     font-weight: 700;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 
 h3 {
@@ -57,16 +58,24 @@ a:hover {
 }
 
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -193,11 +202,14 @@ i.keyboard-down {
 }
 
 @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 25px;
+
+    0%,
+    100% {
+        bottom: 25px;
     }
+
     15% {
-      bottom: 20px;
+        bottom: 20px;
     }
 
     20% {
@@ -207,7 +219,7 @@ i.keyboard-down {
     40% {
         bottom: 25px;
     }
-  }
+}
 
 /* Value Propositions */
 i.truck,
@@ -221,6 +233,7 @@ i.package-icon {
 
 i.truck {
     background-image: url("./assets/truck.svg");
+    margin-bottom: 0.1rem;
 }
 
 i.eq {
@@ -248,11 +261,13 @@ i.package-icon {
     /* padding-left: 6px; */
 }
 
-/* Packages */
+/* Live Sound Packages */
+.live-sound-packages h2 {
+    /* margin-bottom: 1rem; */
+}
+
 .package {
-    /* max-width: 990px; */
-    margin-bottom: 6rem;
-    /* padding: 1rem 0; */
+    margin-bottom: 5rem;
     text-align: start;
 }
 
@@ -262,7 +277,7 @@ i.package-icon {
 
 .package ul {
     margin-top: 10px;
-    /* border-top: 2px solid black; */
+    /* border-top: 1px solid black; */
     padding-top: 1rem;
     /* width: fit-content; */
 }
@@ -277,25 +292,29 @@ i.package-icon {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 30px;
-    /* list-style-type: disc; */
-    /* border-top: 1px solid black; */
-}
-
-.package li:last-child {
-    /* border-bottom: 1px solid black; */
 }
 
 .package .list-price-container {
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    flex: 1;
 }
 
 .package .price {
-    /* color: #042225; */
-    margin-top: 1.5rem;
-    /* margin-left: 1rem; */
+    /* font-size: 1rem; */
+    /* color: #606060; */
+    /* margin: 0 auto; */
+    /* margin-left: auto; */
+    margin-top: 2rem;
     font-weight: 500;
+    /* border: 1px solid black; */
+    /* padding: 1rem; */
+    width: fit-content;
+}
+
+.package .price .value {
+    /* font-weight: 500; */
 }
 
 .required-footnote {
@@ -304,13 +323,14 @@ i.package-icon {
     padding-bottom: 2px;
 }
 
-.package .img {
-    border: 1px solid black;
+.img {
+    /* border: 1px solid black; */
+    /* border-radius: 5%; */
     /* flex: 1; */
     width: 300px;
     height: 300px;
     margin: 0 2rem;
-    align-self: start;
+    align-self: top;
 }
 
 .img {
@@ -322,8 +342,7 @@ i.package-icon {
 .img.standard-package,
 .img.events-dj,
 .img.live-music {
-    filter: grayscale(1);
-    background-position: ;
+    /* filter: grayscale(1); */
 }
 
 .img.standard-package {
@@ -349,30 +368,29 @@ i.package-icon {
 }
 
 /* Services */
-.services {
-    margin: 0 auto;
-    max-width: var(--section-max-width);
-    margin-bottom: var(--section-margin);
-}
-
 .services .container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    /* max-width: 990px; */
     margin: 0 auto;
-    margin-top: 2rem;
 }
 
 .services p {
     max-width: 500px;
-    /* text-align: right; */
+}
+
+.services .day-rates {
+    margin-top: 2rem;
+    width: fit-content;
+}
+
+.day-rates li {
+    font-size: 1.1rem;
+    margin: 1rem auto;
 }
 
 /* Get in touch */
-.get-in-touch p {
-    
-}
+.get-in-touch p {}
 
 .get-in-touch a {
     display: inline-block;
