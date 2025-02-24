@@ -113,8 +113,6 @@ nav {
     background-image: url("./assets/boots-band.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    min-width: 100vw;
     height: fit-content;
     margin-bottom: var(--section-margin);
 }
@@ -130,8 +128,6 @@ nav {
 
 
 .hero-content {
-    /* max-width: var(--section-max-width); */
-    /* padding: 8rem 10% 0 0; */
     padding: 10%;
     color: white;
     text-align: right;
@@ -253,21 +249,10 @@ i.package-icon {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border-bottom: 2px solid black; */
-    /* border-radius: 100px; */
 }
 
 .value-proposition h3 {
     text-align: center;
-}
-
-.value-proposition .content {
-    /* padding-left: 6px; */
-}
-
-/* Live Sound Packages */
-.live-sound-packages h2 {
-    /* margin-bottom: 1rem; */
 }
 
 .package {
@@ -289,6 +274,7 @@ i.package-icon {
 .package .list-img-container {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .package li {
@@ -296,8 +282,6 @@ i.package-icon {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.7rem;
-    /* margin-bottom: 1rem; */
-    /* line-height: 1.4rem; */
 
 }
 
@@ -309,20 +293,13 @@ i.package-icon {
 }
 
 .package .price {
-    /* font-size: 1rem; */
-    /* color: #606060; */
-    /* margin: 0 auto; */
-    /* margin-left: auto; */
-    /* margin-top: 0.5rem; */
     margin-bottom: 1.5rem;
     font-weight: 500;
-    /* border: 1px solid black; */
-    /* padding: 1rem; */
     width: fit-content;
 }
 
 .package .price .value {
-    /* font-weight: 500; */
+    font-weight: 500;
 }
 
 .required-footnote {
@@ -331,39 +308,6 @@ i.package-icon {
     padding-bottom: 2px;
 }
 
-img {
-    /* border: 1px solid black; */
-    /* border-radius: 5%; */
-    /* flex: 1; */
-}
-
-.img.standard-package,
-.img.events-dj,
-.img.live-music {
-    /* filter: grayscale(1); */
-}
-
-.img.standard-package {
-    /* background-image: url("./assets/mic-orange.jpg"); */
-}
-
-.img.events-dj {
-    /* background-image: url("./assets/hands-crowd.jpg"); */
-    /* background-image: url("./assets/party.jpg"); */
-}
-
-.img.live-music {
-    /* background-image: url("./assets/seattle-music-2.jpg"); */
-    /* background-image: url("./assets/hands-crowd.jpg"); */
-}
-
-.img.live-sound-engineering {
-    /* background-image: url("./assets/live-sound-view.jpg"); */
-    /* width: 300px; */
-    /* height: 300px; */
-    /* filter: grayscale(0.1); */
-    /* margin: 0 2rem; */
-}
 
 /* Services */
 .services .container {
@@ -391,8 +335,6 @@ img {
 }
 
 /* Get in touch */
-.get-in-touch p {}
-
 .get-in-touch a {
     display: inline-block;
     margin-top: 2rem;
@@ -457,7 +399,7 @@ footer .social-links a {
 
 footer .right {
     height: fit-content;
-    margin: auto; 
+    margin: auto;
     margin-right: 2rem;
     padding: 1rem;
 }
@@ -522,12 +464,6 @@ footer .copyright {
         padding-left: 1rem;
         margin-bottom: 1rem;
         line-height: 1.4rem;
-    }
-
-    .package .list-price-container {
-    }
-
-    .package .price {
     }
 }
 
